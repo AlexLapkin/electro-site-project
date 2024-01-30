@@ -1023,6 +1023,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /*--border: 1px solid red;--*/
     }
 
+
+    .cont-elec:hover {
+        box-shadow: 2px 2px 2px 2px rgb(83, 85, 207);
+        transform: scale(1.02);
+    }
+
 .cont-elec {
     display: flex;
     margin-top: 20px;
@@ -1075,6 +1081,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 2px 2px 2px 2px gray;
     border-radius: 10px;
 }
+
+.cont-elec-adding:hover {
+    box-shadow: 2px 2px 2px 2px rgb(105, 106, 189);
+    transform: scale(1.02);
+}
+
 
 .subtitle-elec {
     margin-left: 15px;
