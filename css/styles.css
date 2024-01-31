@@ -30,7 +30,8 @@ h1, h2, h3, p
 img 
 {display: block;
 max-width: 100%;
-height: auto;}
+height: auto;
+}
 
 /*--Задание палитры цветов через переменные--*/
 :root
@@ -941,16 +942,44 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /*----------Electro Inf -------------*/
 
 .section-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*--align-items: center;--*/
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 1500px;
+    max-width: 1500px;
 }
+
+.section-inf-ul {
+    display: flex;
+    flex-direction: column;
+    /*--align-items: center;--*/
+    justify-content: center;
+}
+
 
 .add-elec {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.cont-elec {
+    display: flex;
+    margin-top: 20px;
+    /*--border: 1px solid blue;--*/
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
+}
+
+.cont-elec:hover {
+    box-shadow: 2px 2px 2px 2px rgb(83, 85, 207);
+    /*--transform: scale(1.02);--*/
 }
 
 .cont-elec-add {
@@ -965,23 +994,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 
-    .cont-elec:hover {
-        box-shadow: 2px 2px 2px 2px rgb(83, 85, 207);
-        /*--transform: scale(1.02);--*/
-    }
-
-.cont-elec {
-    display: flex;
-    margin-top: 20px;
-    /*--border: 1px solid blue;--*/
-    box-shadow: 2px 2px 2px 2px gray;
-    border-radius: 10px;
-}
-
 .cont-elec-add-one {
    display: flex;
    align-items: center;
-    width: 200px;
+   width: 200px;
     padding: 20px 20px; 
    /*--border: 1px solid black;--*/
 }
@@ -992,7 +1008,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     gap: 20px;
     padding-left: 20px;
-    width: 1450px;
+    min-width: 1450px;
     /*--border: 1px solid yellow--*/
 }
 
