@@ -396,11 +396,12 @@ color: var(--link-active-color);
   }
 --*/
 
-.section-inf {
-    max-width: 428px;
+.section-inf-cont {
+    /*--max-width: 428px;--*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     
@@ -408,23 +409,51 @@ color: var(--link-active-color);
     padding-right: 30px;  --*/
     padding-top: 30px;
     padding-bottom: 30px;
-    max-width: 1500px;
+    /*--max-width: 1500px;--*/
     }
+
+.section-inf-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .elec-img {
 width: 0;
 height: 0;
 }
 
+.elec-img-add {
+    max-width: 200px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cont-elec {
     display: flex;
     flex-direction: column;
+   
+    /*--margin-left: auto;--*/
+    /*--margin-right: auto;--*/
     padding-bottom: 20px;
+    max-width: 396px;
 }
 
 .cont-elec-add {
-    max-width: 396px;
+    max-width: 428px;
 }
+
+.cont-elec-add {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    border: 1px solid red;
+    }
 
 .cont-elec-add-one {
    margin-left: auto;
@@ -460,18 +489,22 @@ height: 0;
     }
     
     .elec-img {
-        width: 250px;
-        height: 100px;
+        max-width: 250px;
+        max-height: 100px;
         }
     
     .cont-elec {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        max-width: 768px;
     }
-    
+
     .cont-elec-add {
-        max-width: 396px;
+        max-width: 500px;
     }
     
     .cont-elec-add-one {
@@ -503,9 +536,8 @@ height: 0;
         }
     
     .cont-elec {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 20px;
+      max-width: 1440px;
+      padding-bottom: 20px;
     }
     
     .cont-elec-add {
@@ -526,6 +558,8 @@ height: 0;
     padding: 96px 0;
     margin-left: auto;
     margin-right: auto;
+    
+    border: 1px solid red;
     }
     
     
@@ -988,7 +1022,8 @@ padding-bottom: 120px;}
 .foot-content
 {
     /*--display: flex;--*/
-align-items: baseline;}
+align-items: baseline;
+}
 
 /*--Дополнительные данные нижнего логотипа--*/
 .foot {
@@ -1188,6 +1223,7 @@ margin-left: 16px; }
     /*--transform: scale(1.02);--*/
 }
 
+/*--
 .cont-elec-add {
     display: flex;
     flex-direction: column;
@@ -1196,9 +1232,9 @@ margin-left: 16px; }
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
-    /*--border: 1px solid red;--*/
+    border: 1px solid red;
     }
-
+--*/
 
 .cont-elec-add-one {
    display: flex;
