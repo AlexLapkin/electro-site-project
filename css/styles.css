@@ -55,6 +55,11 @@ height: auto;
 --icon-fill-color: #f4f4fd;
 }
 
+
+/*----------------------HEADER-----------------------*/
+
+/*-----------------МОБИЛЬНАЯ ВЕРСИЯ-------------------*/
+
 /*--Задаем контейнер для центровки и ограничения ширины контента--*/
 .header {
 border-bottom: 1px solid #E7E9FC;
@@ -63,47 +68,681 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 /*--Контейнер, в который помещается контент секций--*/
-.container
-{width: 1158px;
-margin: 0 auto;
-padding: 0 15px;}
-
+.container {
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 /*--Описываем контейнер главной навигации--*/
 .main-nav {
-display: flex; /*--Выстраиваем элементы по горизонтали--*/
-align-items: center;}
+    display: flex; /*--Выстраиваем элементы по горизонтали--*/
+    align-items: center;}
+    
+    /*--Делаем логотип и список навигации flex-контейнером--*/
+    .nav {
+    display: flex;
+    align-items: center;}/*--Центруем элементы вдоль горизонтальной оси--*/
 
-/*--Делаем логотип и список навигации flex-контейнером--*/
-.nav {
-display: flex;
-align-items: center;}/*--Центруем элементы вдоль горизонтальной оси--*/
+
+  /*--Скрываем ненужные меню для мобайла--*/
+.nav-ul, .cont  
+{ display: none; } 
 
 
 /*--Данные верхнего логотипа--*/
-.logo
-{color: var(--logo-check-color);
-font-family: 'Raleway', sans-serif;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;}
+.logo {
+    color: var(--logo-check-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 
 /*--Дополнительные данные верхнего логотипа--*/
-.head
-{padding: 24px 0;
-margin-right: 76px;}/*--Задаем отступ между логотипом и nav-ul--*/
+.head {
+  padding: 24px 0;
+  margin-right: 76px;}/*--Задаем отступ между логотипом и nav-ul--*/
 
+/*--Задаем отступ между логотипом и nav-ul--*/
 
 /*--Описываем слово Studio--*/
 .header-word {
-color: var(--header-word-color);
-font-family: 'Raleway' sans-serif;;
-font-weight: 800;
-font-size: 18px;
+    color: var(--header-word-color);
+    font-family: 'Raleway' sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/*--Ставим элементы навигации в строку--*/
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+
+/*----*/ 
+.mobile-cont-sl
+{ display: flex;
+  flex-direction: column; }
+
+
+/*--Мобильное меню контакты--*/
+.mobile-menu-cont
+{display: flex;
+ flex-direction: column;   
+ gap: 40px; }
+
+
+ /*--Задаем цвет ссылке телефона--*/
+.tel-number
+{ color: #4D5AE5; }
+
+
+/*--Параметры текста email--*/
+.mobile-menu-email
+{font-weight: 500;
+ font-size: 20px;
+ line-height: 1.2;
+ letter-spacing: 0.02em;
+ color: #434455;
+ text-decoration: none;
+}
+
+
+/*--Список соцсетей мобильного меню--*/
+.mobile-menu-social
+{display: flex;
+ margin-top: 48px;
+ max-width: 328px;
+ justify-content: space-between;
+ }
+
+
+/*--Ячейка каждой иконки линка соцсети--*/
+.social-link
+{width: 40px;
+height: 40px;}
+
+
+/*--Описание класса ссылки соцсетей мобильного меню--*/
+.social-link-a-mobile {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     background-color: #4D5AE5;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     color: #FFFFFF;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+ /*--Меняем цвет при наведении на ссылку соцсети--*/
+.social-link-a-mobile:hover,
+ .social-link-a-mobile:focus {
+     background-color: #404bbf;
+    }
+
+ /*--Класс для заливки иконок соцсетей футера--*/
+.icon-sl-mobile 
+{ fill: #f4f4fd; }
+
+
+
+/*-----------ПЛАНШЕТНАЯ ВЕРСИЯ-----------*/
+
+@media screen and (min-width:768px)
+{
+
+/*--Задаем ширину контейнера--*/
+.container {
+    max-width: 768px;
+    }
+
+/*--Скрываем кнопку вызова мобильного меню--*/    
+.mobile-menu-open-btn
+{display: none;}
+
+
+/*--Задаем отступ между логотипом и nav-ul--*/
+.head 
+{ margin-right: 120px; }
+
+
+/*--Включаем меню навигации - делаем видимым--*/
+.nav 
+{display: flex;
+align-items: center;
+}
+
+
+/*--Включаем главную навигацию--*/
+.main-nav 
+{ 
+    display: flex; 
+} /*--Выстраиваем элементы по горизонтали--*/
+
+
+/*--Делаем список навигации flex-контейнером--*/
+.nav-ul 
+{display: flex;
+align-items: center;
+gap: 40px;
+
+}     
+    
+
+/*--Прижимаем секцию почты и телефона к правому краю--*/
+.cont
+{display: flex;
+ font-style: normal; /*--сбрасываем стиль italic--*/
+margin-left: auto;
+ }
+
+
+/*--Делаем список контактов flex-контейнером--*/
+.cont-ul {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+
+/*--Данные навигационных ссылок--*/
+.nav-link {
+color: var(--nav-link-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*--Меняем цвет ссылок при наведении--*/
+.nav-link:hover,
+.nav-link:focus
+{color: var(--link-active-color); }
+
+
+/*--Задаем ссылке страницы Studio - relative--*/
+.current-page-main
+{position: relative;
+color: var(--link-active-color);}
+
+
+/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+.current-page-main::after
+{content: '';
+ width: 48px;
+ height: 4px;
+ left: 0;
+ bottom: -1px;
+ border-radius: 2px;
+ background-color: #404BBF;
+ margin: auto;
+ position: absolute;
+ }
+
+
+/*--Данные ссылок контактов--*/
+.cont-link {
+color: var(--main-text-color);
+font-weight: 400;
+font-size: 12px;
 line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;}
+letter-spacing: 0.04em;
+text-decoration: none;
+display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*--Дополнительный класс для почты--*/
+.email
+{padding-top: 16px;}
+
+
+/*--Дополнительный класс для телефона--*/
+.tel
+{padding-bottom: 16px}
+
+
+/*--Меняем цвет ссылок при наведении--*/
+.cont-link:hover,
+.cont-link:focus {
+color: var(--link-active-color);
+}
+
+}
+
+
+/*-----------------Описываем ДЕСКТОП---------------------*/
+
+@media screen and (min-width:1158px) {
+
+    .container
+    {max-width: 1158px;
+     padding-left: 15px;
+     padding-right: 15px;}
+    
+    
+    /*--Задаем отступ между логотипом и nav-ul--*/
+    .head
+    {margin-right: 76px;} /*--Задаем отступ между логотипом и nav-ul--*/
+    
+    
+    /*--Делаем список навигации flex-контейнером--*/
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        }
+    
+    
+    /*--Прижимаем секцию почты и телефона к правому краю--*/
+    .cont
+    { margin-left: auto;}
+    
+    
+    /*--Делаем список контактов flex-контейнером--*/
+    .cont-ul 
+    { flex-direction: row;
+      gap:40px; }
+    
+    
+    /*--Убираем паддинги--*/
+    .tel
+    {padding-bottom: 0;}
+    
+    .email 
+    { padding-top: 0; }
+    
+    /*--Данные ссылок контактов--*/
+    .cont-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
+    }
+    
+    }
+
+
+/*-------------SECTION INF ---------------*/
+
+/*-------------МОБИЛЬНАЯ ВЕРСИЯ------------------*/
+
+/*--Контейнер, в который помещается контент секций--*/
+/*--
+.container {
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+--*/
+
+.section-inf {
+    max-width: 428px; 
+}
+
+.elec-img {
+width: 0;
+height: 0;
+}
+
+.cont-elec {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.cont-elec-add {
+    max-width: 396px;
+}
+
+.cont-elec-add-one {
+   margin-left: auto;
+   margin-right: auto;
+   }
+
+.cont-elec-adding {
+    
+}
+
+.cont-elec-two {
+    display: flex;
+    flex-direction: column;
+   
+    padding-bottom: 20px;
+}
+
+
+/*----------------ПЛАНШЕТНАЯ ВЕРСИЯ------------*/
+
+/*----Пишем правило для планшетов--*/
+@media screen and (min-width:768px)
+{
+
+    .section-inf {
+        max-width: 768px; 
+    }
+    
+    .elec-img {
+        width: 250px;
+        height: 100px;
+        }
+    
+    .cont-elec {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    
+    .cont-elec-add {
+        max-width: 396px;
+    }
+    
+    .cont-elec-add-one {
+       margin-left: auto;
+       margin-right: auto;
+       }
+      
+    .cont-elec-two {
+        display: flex;
+        flex-direction: row;
+        
+        padding-bottom: 20px;
+    }
+}
+
+/*----------------ДЕСКТОПНАЯ ВЕРСИЯ------------*/
+
+/*----Пишем правило для планшетов--*/
+@media screen and (min-width:1156px)
+{
+
+    .section-inf {
+        max-width: 1440px; 
+    }
+    
+    .elec-img {
+        width: 250px;
+        height: 100px;
+        }
+    
+    .cont-elec {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    
+    .cont-elec-add {
+        max-width: 1440px;
+    }
+    
+   }
+
+
+/*-------------FOOTER---------------*/
+
+/*---------МОБИЛЬНАЯ ВЕРСИЯ---------*/
+
+
+/*--Данные Футера--*/
+.footer {
+    background-color: var(--footer-background-color);
+    padding: 96px 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    
+    /*--Ставим по горизонтали левый и правый блок футера--*/
+    .foot-content
+    {display: flex;
+     flex-direction: column;   
+     align-items: center;
+     }
+    
+    
+    /*--Дополнительный контейнер для планшетной версии--*/
+    .logo-sl-foot
+    { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    
+    /*--Контейнер логотип + текст--*/
+    .logo-text-footer
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    }
+    
+    
+    /*--Дополнительные данные нижнего логотипа--*/
+    .foot 
+    { 
+    display: inline-block;
+    margin-bottom: 16px;
+    }
+    
+    /*--Описываем слово-ссылку WEB--*/
+    .footer-word
+    {color: var(--footer-main-text-color);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+    
+    /*--Описываем текст футера--*/
+    .footer-text {
+    color: var(--footer-main-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    }
+    
+    /*--Задание отступов контейнеру соцсетей футера--*/
+    .social-link-footer-container
+    {padding: 0;}
+    
+    
+    /*--Текст Social media в футере--*/
+    .footer-text-title
+    {color: var(--footer-secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: center;
+    }
+    
+    
+    /*--Контейнер 4-х ячеек с иконками соцсетей--*/
+    .section-social-ul-footer 
+    {display: flex;
+     gap: 16px; }
+    
+    
+     /*--Описание класса ссылки соцсетей футера--*/
+    .social-link-a-foot {
+         display: flex;
+         width: 100%;
+         height: 100%;
+         background-color: #4D5AE5;
+         border-radius: 50%;
+         align-items: center;
+         justify-content: center;
+         color: #FFFFFF;
+         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+    
+    /*--Меняем цвет при наведении на ссылку футера--*/
+    .social-link-a-foot:hover,
+    .social-link-a-foot:focus 
+    { background-color: #31D0AA; }
+    
+    
+     /*--Класс для заливки иконок соцсетей футера--*/
+    .icon-sl-foot {
+      fill: #f4f4fd; }
+    
+    
+    /*--Контейнер с формой--*/
+    .cont-subscribe
+    {margin-top: 72px;} /*--Отодвигаем на 72px вниз--*/
+    
+    
+    /*--Описание текста над формой--*/
+    .text-form
+    {
+    color: var(--footer-secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: center;
+    }
+    
+    /*--Описание контейнера для формы Subscribe--*/
+    .form-subscribe 
+    { display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    
+    /*--Описание <label>, в которую вложен "p + input"--*/
+    .label-subscribe 
+    { margin-bottom: 16px; }
+
+
+/*------------ПЛАНШЕТНАЯ ВЕРСИЯ ФУТЕРА-----------*/
+
+@media screen and (min-width: 768px)
+
+{
+
+/*--Данные Футера--*/
+.footer {
+padding: 96px 0;
+}
+
+
+/*--Описываем планшетную версию--*/
+.foot-content
+{ width: 584px;
+  align-items: flex-start;
+}
+
+
+/*--Описываем дополнительный класс logo+SL--*/
+.logo-sl-foot
+{
+ flex-direction: row;
+ align-items: baseline;
+ }
+
+
+/*--Контейнер логотип + текст-обнуляем нижний отступ от мобайл-*/
+.logo-text-footer
+{margin-bottom: 0;
+ margin-right: 24px;
+ align-items: flex-start;
+}
+
+
+/*--Текст Social media в футере--*/
+.footer-text-title
+{text-align: start;
+}
+
+
+/*--Описание текста над формой--*/
+.text-form
+{ text-align: start;}
+
+
+/*--Описание контейнера для формы Subscribe--*/
+.form-subscribe 
+{ display: flex;
+flex-direction: row;
+align-items: baseline; }
+
+
+/*--Описание <label>, в которую вложен "p + input"--*/
+.label-subscribe 
+{ margin-right: 24px; }
+
+
+/*--Описание <input> внутри формы--*/
+.cont-subscribe input
+{ width: 264px;  }
+
+}
+
+/*---------------ДЕСКТОПНАЯ-ВЕРСИЯ-ФУТЕРА--------------*/
+
+@media screen and (min-width: 1158px) {
+  
+
+/*--Указываем отступы для десктопа--*/
+.footer {
+padding: 100px 0;
+}
+
+/*--Ставим по горизонтали левый и правый блок футера--*/
+.foot-content
+{display: flex;
+ flex-direction: row;
+ width: 1158px; 
+align-items: baseline;
+}
+
+
+/*--Контейнер логотип + текст--*/
+.logo-text-footer
+{margin-right: 120px;}
+
+ 
+/*--Контейнер с формой--*/
+.cont-subscribe
+{ margin-top: 0px;
+  margin-left: 80px;} /*--Отодвигаем на 80px--*/
+
+}
+
+/*--------------------------------------------------------*/
+
 
 /*--Делаем список навигации flex-контейнером--*/
 .nav-ul 
@@ -174,7 +813,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none;
 display: block;
-padding: 24px 0;
+/*--padding: 24px 0;--*/
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -184,8 +823,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 color: var(--link-active-color);
 }
 
-/*--Задаем внутренние отступы секции Adv--*/
-.section-adv {padding: 120px 0;}
 
 /*--Данные заголовка секции--*/
 .section-title {
@@ -197,21 +834,6 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-bottom: 72px;
-}
-
-/*--Описываем скрытый заголовок--*/
-.visually-hidden
-{
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-white-space: no-wrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;    
 }
 
 /*--Делаем список flex-элементом, чтобы список расположить горизонтально--*/
@@ -231,18 +853,6 @@ gap: 24px;}
     /*--width: calc((100% - 3*16px)/3)--*/
 }
 
-/*--Описываем иконки секции Advantages--*/
-.icon-adv
-{display: flex;
-align-items: center;
-justify-content: center;    
-width: 264px;
-height: 112px;
-background-color: #F4F4FD;
-margin-bottom: 8px;
-border-radius: 4px;
-}
-
 /*--Данные подзаголовков--*/
 .section-subtitle 
 {color: var(--section-main-text-color);
@@ -260,40 +870,6 @@ border-radius: 4px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-/*--Задаем внутренний отступ секции Work Exmaples--*/
-.section-exmp 
-{padding-bottom: 120px;}
-
-/*--Данные секции Our Team, у которой отличается фон--*/
-.section-team
-{background-color: var(--section-team-background-color);
-padding: 120px 0;} /*--Задаем внутренние паддинги--*/
-
-.section-team-card {
-    background-color: var(--main-background-color);
-    text-align: center;
-    flex-basis: calc((100% - 3*24px)/4);
-    /*--width: calc((100% - 3*24px)/4)--*/
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-/*--Создание контейнера - имя, должность членов команды--*/
-.name-job
-{padding: 32px 0; } /*--внутренние отступы контейнера--*/
-
-/*--Задание параметров ФИ сотрудника--*/
-.name-job .section-subtitle
-{text-align: center;
- margin-bottom: 8px;}
-
-/*--Задание параметров должности сотрудника--*/
-.name-job .section-text 
-{text-align: center;
-margin-bottom: 8px}
-
 
 /*--Контейнер 4-х ячеек с иконками соцсетей--*/
 .section-social-ul
@@ -330,50 +906,6 @@ background-color: #404bbf;
 .icon-sl {
 fill: var(--icon-fill-color);}
 
-/*--Задаем внутренние паддинги секции закачиков--*/
-.section-customers
-{padding: 120px 0;}
-
-/*--Описание секции Заказчика--*/
-.section-customers-ul
-{display: flex;
- gap: 24px;}
-
-/*--Описание контейнера логотипов заказчиков--*/
-.logo-company
-{margin-bottom:72px;}
-
-/*--Описываем ссылку на иконку Заказчика--*/
-.customer-link
-{
- width: calc((100% - 120px)/6);
- width: 168px; 
- height: 88px;
- background-color: #FFFFFF;}
-
-/*--Описываем ссылку логотипа компаний--*/
-.customer-link-a
-{
-width: 100%;
-height: 100%;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #8e8f99;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customer-link-a:hover,
-.customer-link-a:focus
-{border-color: #404bbf;
-color: #404bbf;}
-
-/*--Класс для заливки иконок логотипов компаний--*/
-.icon-customer 
-{fill: currentColor;}
 
 /*--Описываем ссылку текущей страницы Портфолио--*/
 .current-page-port
@@ -399,67 +931,6 @@ color: var(--link-active-color);}
 padding-top: 96px;
 padding-bottom: 120px;}
 
-/*--Делаем список кнопок горизонтальным flex-элементом--*/
-.section-ul-button {
-display: flex;
-gap: 24px;
-margin-bottom: 72px;
-justify-content: center;}
-
-/*---Кнопки Портфолио---*/
-.btn {
-color: var(--btn-color);
-background-color: #F4F4FD;
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-border: 1px solid var(--border-btn-color);
-border-radius: 4px;
-cursor: pointer;
-padding: 12px 24px 12px 24px;
-display: block;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-
-/*--Меняем цвет кнопок Портфолио при наведении--*/
-.btn:hover,
-.btn:focus {
-color: var(--main-btn-color);
-background-color: #404BBF;
-border: 1px solid transparent;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12) ;
-}
-
-/*--Делаем список flex-элементом, чтобы список расположить горизонтально
-    в несколько рядов--*/
-.section-ul-card {
-display: flex;
-flex-wrap: wrap;
-column-gap: 24px;
-row-gap: 48px;
-padding-left: 0;
-padding-right: 0;
-}
-
-/*--Описываем каждый элемент списка--*/
-.section-item-card {
-flex-basis: calc((100% - 2*24px)/3);
-}
-
-/*--Создание контейнера - описание карточки портфолио--*/
-.img-title {
-padding: 32px 16px; /*--внутренние отступы контейнера--*/
-border: 1px solid #e7e9fc;
-border-top: none;}
-
-/*--Задание отступа подзаголовку img Portfolio--*/
-.img-title .section-subtitle
-{margin-bottom: 8px;}
 
 /*--Делаем ссылку блочным элементом--*/
 .pf-link
@@ -485,25 +956,6 @@ border-top: none;}
 {position: relative;
  overflow: hidden;
  }
-
-/*--Описываем текст оверлей--*/
-.text-overlay
-{position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: auto;
-transform: translateY(100%);
-background-color: #4D5AE5;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-color: #F4F4FD;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-padding: 40px 32px;
-}
 
 /*--Данные Футера--*/
 .footer {
@@ -685,259 +1137,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 {fill: #f4f4fd;
 margin-left: 16px; }
 
-
-/*--Описание бекдропа--*/
-.backdrop
-{
- position: fixed;
- z-index: 100;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background-color: rgba(46, 47, 66, 0.4);
- transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
- visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*--Дополнительный класс бекдропа--*/
-.backdrop.is-hidden
-{visibility: hidden;
- opacity: 0;
- pointer-events: none;
-}
-
-/*--Описание модального окна--*/
-.modal-window
-{width: 408px;
- min-height: 576px;
- background-color: #FCFCFC;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
- border-radius: 4px;       
- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
- padding-left: 24px;
- padding-right: 24px;
- padding-top: 72px;
- padding-bottom:24px;
- }
-
-/*--Описание кнопки закрытия модального окна--*/
-.modal-close-btn
-{
-position: absolute;
-top: 24px;
-right: 24px;
-display: flex;
-align-items: center;
-justify-content: center;    
-background-color: #E7E9FC;
-padding: 0;
-width: 24px;
-height: 24px;
-border-radius: 50%;
-border: 1px solid rgba(0, 0, 0, 0.1);
-cursor: pointer;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*--Поведение кнопки закрытия модального окна при ховере, фокусе--*/
-.modal-close-btn:hover,
-.modal-close-btn:focus
-{background-color: #404BBF;
- border: none;
-}
-
-/*-Описание иконки закрытия модального окна-*/
-.modal-close-btn-icon
-{fill: #2E2F42;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-
-/*--Меняем цвет иконки при ховере/фокусе модальной кнопки закрытия--*/
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon
-{fill: #fff;}
-
-
-/*--Надпись над формами--*/
-.modal-win-text {
-    margin-bottom: 16px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
-/*--Описание формы модального окна--*/
-.modal-win-form 
-{margin-bottom: 8px;}
-
-
-/*--Описание <label> модального окна--*/
-.modal-win-label
-{ margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8E8F99;
-  display: block;
-  margin-bottom: 4px;
-}
-
-/*--Описание контейнера для input+svg--*/
-.modal-win-form-cont {
-    display: block;
-    position: relative;
-}
-
-/*--Описание <input>--*/
-.modal-win-input
-{
-width: 100%;
-height: 40px;
-padding-left: 38px;
-border: 1px solid rgba(46, 47, 66, 0.2);
-border-radius:4px;
-background-color: transparent;
-outline: transparent;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-color: #2E2F42;
-}
-
-/*--Меняем цвет рамки на <input>--*/
-.modal-win-input:focus 
-{border-color: #4D5AE5;}
-
-/*--Меняем заливку иконки при фокусе на <input>--*/
-.modal-win-input:focus + .icon-form 
-{fill: #4D5AE5;}
-
-/*--Описываем вложенные иконки в формы--*/
-.icon-form
-{
-position: absolute;
-left: 16px;
-fill: #2E2F42;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-top: 50%;
-transform: translateY(-50%);
-}
-
-/*--Описываем textarea--*/
-.modal-win-form-textarea
-{margin-bottom: 16px;}
-
-/*--Описание формы textarea Comment--*/
-.modal-win-textarea {
-display: block;
-width: 100%;
-height: 120px;
-resize: none;
-padding: 8px 16px;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: #2E2F42;
-border: 1px solid rgba(46, 47, 66, 0.2);
-border-radius: 4px;
-background-color: transparent;
-outline: transparent;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*--Меняем цвет рамки textarea при ховере и фокусе--*/
-.modal-win-textarea:focus 
-{ border: 1px solid rgba(77, 90, 229, 1);}
-
-/*--Задаем цвет placeholder textarea--*/
-.modal-win-textarea::placeholder 
-{ 
- font-weight: 400;
- font-size: 12px;
- line-height: 1.17;
- letter-spacing: 0.04em;  
- color: #8E8F99; }
-
-/*--Задаем отступ вниз от checkbox до кнопки--*/
-.modal-win-checkbox
-{margin-bottom: 24px; }
-
-/*--Описание <label> checkbox--*/
-.modal-win-label-checkbox
-{
- font-weight: 400;
- font-size: 12px;
- line-height: 1.17;
- letter-spacing: 0.04em;
- color: #8E8F99;
- }
-
-/*--Описание span с вложенной svg-иконкой--*/
-.modal-win-span
-{
- display: inline-flex;
- align-items: center;
- justify-content: center;
- width: 16px;
- height: 16px;
- border: 1px solid rgba(46, 47, 66, 0.2);
- border-radius: 2px;
- margin-right: 8px;
- fill: transparent;  
-}
-
-
-/*--Связываем реальный checkbox с фейковым--*/
-.modal-win-checkbox:checked + .modal-win-label-checkbox
- > .modal-win-span
-{
- background-color: #404bbf;
- border: none;
- fill: #ffff;
- border-color: #404bbf;    
-}  
-
-/*--Описание ссылки Privacy Policy--*/
-.modal-win-checkbox-link
-{color: var(--logo-check-color); }
-
-/*--Кнопка Send модального окна--*/
-.modal-btn
-{
- display: block;
- border: none;
- cursor: pointer; 
- min-width: 169px;
- height: 56px;
- margin: auto;
- 
-background-color: var(--btn-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #fff;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*--Описываем ховер и фокус модальной кнопки--*/
-.modal-btn:hover,
-.modal-btn:focus
-{ background-color: #404BBf;}
 
 /*----------Electro Inf -------------*/
 
