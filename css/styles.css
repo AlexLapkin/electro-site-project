@@ -76,15 +76,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     margin-right: auto;
   }
   
-/*--Описываем контейнер главной навигации--*/
-.main-nav {
-    display: flex; /*--Выстраиваем элементы по горизонтали--*/
-    align-items: center;}
-    
+ 
     /*--Делаем логотип и список навигации flex-контейнером--*/
     .nav {
     display: flex;
-    align-items: center;}/*--Центруем элементы вдоль горизонтальной оси--*/
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}/*--Центруем элементы вдоль горизонтальной оси--*/
 
 
   /*--Скрываем ненужные меню для мобайла--*/
@@ -125,7 +124,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     }
 
 
@@ -398,8 +397,19 @@ color: var(--link-active-color);
 --*/
 
 .section-inf {
-    max-width: 428px; 
-}
+    max-width: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+   /*-- padding-left: 30px;
+    padding-right: 30px;  --*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 1500px;
+    }
 
 .elec-img {
 width: 0;
@@ -421,8 +431,14 @@ height: 0;
    margin-right: auto;
    }
 
-.cont-elec-adding {
-    
+   .elec-inf {
+    display: flex;
+    /*--align-items: center;
+    justify-content: center;--*/
+    /*--gap: 20px;--*/
+    padding-left: 20px;
+    max-width: 1450px;
+    /*--border: 1px solid yellow--*/
 }
 
 .cont-elec-two {
@@ -644,6 +660,17 @@ height: 0;
     /*--Описание <label>, в которую вложен "p + input"--*/
     .label-subscribe 
     { margin-bottom: 16px; }
+
+    @media screen and (max-width: 427px) {
+        .cont-subscribe-input
+        {width: 300px;}
+      }
+      
+      @media screen and (min-width: 428px) {
+        .cont-subscribe-input {
+          width: 395px;
+        }
+      }
 
 
 /*------------ПЛАНШЕТНАЯ ВЕРСИЯ ФУТЕРА-----------*/
@@ -957,17 +984,10 @@ padding-bottom: 120px;}
  overflow: hidden;
  }
 
-/*--Данные Футера--*/
-.footer {
-background-color: var(--footer-background-color);
-padding: 100px 0;
-margin-left: auto;
-margin-right: auto;
-}
-
 /*--Ставим по горизонтали левый и рпавый блок футера--*/
 .foot-content
-{display: flex;
+{
+    /*--display: flex;--*/
 align-items: baseline;}
 
 /*--Дополнительные данные нижнего логотипа--*/
@@ -1140,20 +1160,7 @@ margin-left: 16px; }
 
 /*----------Electro Inf -------------*/
 
-.section-inf {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 
-    /*--align-items: center;--*/
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width: 1500px;
-}
 
 .section-inf-ul {
     display: flex;
@@ -1201,15 +1208,7 @@ margin-left: 16px; }
    /*--border: 1px solid black;--*/
 }
 
-.elec-inf {
-    display: flex;
-    /*--align-items: center;
-    justify-content: center;--*/
-    gap: 20px;
-    padding-left: 20px;
-    max-width: 1450px;
-    /*--border: 1px solid yellow--*/
-}
+
 
 .elec-inf-add {
  display: flex;
