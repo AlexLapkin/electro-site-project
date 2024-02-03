@@ -420,6 +420,11 @@ color: var(--link-active-color);
 }
 --*/
 
+.add-elec {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .elec-img {
 width: 0;
 height: 0;
@@ -442,6 +447,11 @@ height: 0;
     max-width: 396px;
     box-shadow: 2px 2px 2px 2px gray;
     border-radius: 10px;
+}
+
+.cont-elec:hover {
+    box-shadow: 2px 2px 2px 2px rgb(83, 85, 207);
+    /*--transform: scale(1.02);--*/
 }
 
 .cont-elec-add {
@@ -467,6 +477,22 @@ height: 0;
    margin-left: auto;
    margin-right: auto;
    }
+
+   .cont-elec-adding {
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+    gap: 20px;
+   /*-- border: 1px solid blue;--*/
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
+}
+
+.cont-elec-adding:hover {
+    box-shadow: 2px 2px 2px 2px rgb(105, 106, 189);
+    /*--transform: scale(1.02);--*/
+}
+
  
    .elec-inf {
     display: flex;
@@ -478,11 +504,54 @@ height: 0;
     /*--border: 1px solid yellow--*/
 }
 
+.elec-inf-add {
+    display: flex;
+    gap: 10px;
+     
+   }
+
 .cont-elec-two {
     display: flex;
     flex-direction: column;
-   
     padding-bottom: 20px;
+}
+
+.electro {
+    text-align: center;
+    font-family:cursive
+}
+
+.elec {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.elec:hover {
+    color:rgb(83, 85, 207);
+}
+
+.elec-inf-add-title {
+    text-align: center;
+  }
+  
+  ul 
+  {
+      list-style: none;
+  }
+  
+  .subtitle-elec {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.subtitle-elec5 {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 16px;
 }
 
 
@@ -1171,91 +1240,3 @@ margin-bottom: 16px;
  /*--Класс для заливки иконок соцсетей футера--*/
  .icon-sl-foot {
   fill: #f4f4fd; }
-
-
-/*----------------ДЗ-6-------------------*/
-
-/*--Описываем поведение <input> при фокусе--*/
-
-/*----------Electro Inf -------------*/
-
-.add-elec {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.cont-elec:hover {
-    box-shadow: 2px 2px 2px 2px rgb(83, 85, 207);
-    /*--transform: scale(1.02);--*/
-}
-
-.elec-inf-add {
- display: flex;
- gap: 10px;
-  
-}
-
-.cont-elec-two {
-    display: flex;
-    
-  /*-- border: 1px solid green;--*/ 
-   
-}
-
-.add {
-    border-top: 1px solid gray;
-}
-
-.cont-elec-adding {
-    display: flex;
-    flex-direction:column;
-    margin-top: 20px;
-    gap: 20px;
-   /*-- border: 1px solid blue;--*/
-    box-shadow: 2px 2px 2px 2px gray;
-    border-radius: 10px;
-}
-
-.cont-elec-adding:hover {
-    box-shadow: 2px 2px 2px 2px rgb(105, 106, 189);
-    /*--transform: scale(1.02);--*/
-}
-
-
-.subtitle-elec {
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.subtitle-elec5 {
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-size: 16px;
-}
-
-.elec-inf-add-title {
-  text-align: center;
-}
-
-ul 
-{
-    list-style: none;
-}
-
-.elec {
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    color: black;
-}
-
-.elec:hover {
-    color:rgb(83, 85, 207);
-}
-
-.electro {
-    text-align: center;
-    font-family:cursive
-}
