@@ -412,11 +412,13 @@ color: var(--link-active-color);
     /*--max-width: 1500px;--*/
     }
 
-.section-inf-ul {
+/*--
+    .section-inf-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+--*/
 
 .elec-img {
 width: 0;
@@ -424,7 +426,7 @@ height: 0;
 }
 
 .elec-img-add {
-    max-width: 200px;
+    /**--max-width: 200px;--*/
     max-height: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -434,10 +436,12 @@ height: 0;
     display: flex;
     flex-direction: column;
    
-    /*--margin-left: auto;--*/
-    /*--margin-right: auto;--*/
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 20px;
     max-width: 396px;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
 }
 
 .cont-elec-add {
@@ -456,10 +460,14 @@ height: 0;
     }
 
 .cont-elec-add-one {
+    display: flex;
+    align-items: center;
+    /*--max-width: 300px;--*/
+     padding: 20px 20px; 
    margin-left: auto;
    margin-right: auto;
    }
-
+ 
    .elec-inf {
     display: flex;
     /*--align-items: center;
@@ -484,9 +492,11 @@ height: 0;
 @media screen and (min-width:768px)
 {
 
+    /*-- 
     .section-inf {
         max-width: 768px; 
     }
+    --*/
     
     .elec-img {
         max-width: 250px;
@@ -497,8 +507,8 @@ height: 0;
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
+       /*-- margin-left: auto;
+        margin-right: auto;  --*/
         padding-bottom: 20px;
         max-width: 768px;
     }
@@ -526,9 +536,11 @@ height: 0;
 @media screen and (min-width:1156px)
 {
 
+    /*--
     .section-inf {
         max-width: 1440px; 
     }
+    --*/
     
     .elec-img {
         width: 250px;
@@ -1195,27 +1207,9 @@ margin-left: 16px; }
 
 /*----------Electro Inf -------------*/
 
-
-
-.section-inf-ul {
-    display: flex;
-    flex-direction: column;
-    /*--align-items: center;--*/
-    justify-content: center;
-}
-
-
 .add-elec {
     margin-top: 20px;
     margin-bottom: 10px;
-}
-
-.cont-elec {
-    display: flex;
-    margin-top: 20px;
-    /*--border: 1px solid blue;--*/
-    box-shadow: 2px 2px 2px 2px gray;
-    border-radius: 10px;
 }
 
 .cont-elec:hover {
@@ -1223,26 +1217,6 @@ margin-left: 16px; }
     /*--transform: scale(1.02);--*/
 }
 
-/*--
-.cont-elec-add {
-    display: flex;
-    flex-direction: column;
-    width: 1300px;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border: 1px solid red;
-    }
---*/
-
-.cont-elec-add-one {
-   display: flex;
-   align-items: center;
-   width: 300px;
-    padding: 20px 20px; 
-   /*--border: 1px solid black;--*/
-}
 
 
 
