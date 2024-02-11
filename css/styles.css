@@ -130,10 +130,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 /*--Задаем ссылке страницы Studio - relative--*/
 .current-page-main
 {position: relative;
-color: var(--link-active-color);}
+color: var(--link-active-color);
+text-decoration: underline;
+}
+
 
 
 /*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+/*--
 .current-page-main::after
 {content: '';
  width: 100px;
@@ -144,7 +148,7 @@ color: var(--link-active-color);}
  background-color: #404BBF;
  margin: auto;
  position: absolute;
- }
+ }--*/
 
 /*----*/ 
 .mobile-cont-sl
@@ -747,7 +751,8 @@ height: 0;
     
     /*--Контейнер с формой--*/
     .cont-subscribe
-    {margin-top: 72px;} /*--Отодвигаем на 72px вниз--*/
+    {margin-top: 72px;
+     } /*--Отодвигаем на 72px вниз--*/
     
     
     /*--Описание текста над формой--*/
@@ -871,13 +876,15 @@ height: 0;
       align-items: flex-start;
     }
     
-    
     /*--Описываем дополнительный класс logo+SL--*/
     .logo-sl-foot
     {
      flex-direction: row;
      align-items: baseline;
-     }
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto; 
+    }
     
     
     /*--Контейнер логотип + текст-обнуляем нижний отступ от мобайл-*/
@@ -1248,10 +1255,12 @@ margin-bottom: 16px;
   /*--Задаем ссылке страницы Studio - relative--*/
 .current-page-reltime
 {position: relative;
-color: var(--link-active-color);}
+color: var(--link-active-color);
+text-decoration: underline;}
 
 
 /*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+/*--
 .current-page-reltime::after
 {content: '';
  width: 115px;
@@ -1263,7 +1272,7 @@ color: var(--link-active-color);}
  margin: auto;
  position: absolute;
  }
-  
+ --*/ 
   
   
   
@@ -1302,10 +1311,13 @@ color: var(--link-active-color);}
   /*--Задаем ссылке страницы Studio - relative--*/
 .current-page-main-boil
 {position: relative;
-color: var(--link-active-color);}
+color: var(--link-active-color);
+text-decoration: underline;
+}
 
 
 /*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+/*--
 .current-page-main-boil::after
 {content: '';
  width: 130px;
@@ -1317,6 +1329,7 @@ color: var(--link-active-color);}
  margin: auto;
  position: absolute;
  }
+ --*/
 
   /*------------------ПЛАНШЕТ------------------*/
 
@@ -1326,3 +1339,13 @@ color: var(--link-active-color);}
     flex-direction: row;
     }
   }
+
+   /*------Страница add энергометра-ваттметра--------*/
+  
+  /*-------------Mobile version------------*/
+
+  /*--Задаем ссылке страницы Studio - relative--*/
+.current-page-wattmeter
+{position: relative;
+color: var(--link-active-color);
+text-decoration: underline;}
