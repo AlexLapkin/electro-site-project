@@ -3,6 +3,7 @@ body {
     background-color: var(--main-background-color);
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
+    /*--background-image: url("../images/background5.jpg");--*/
     }
 
 /*--Сброс дефолтных настроек--*/
@@ -36,7 +37,7 @@ height: auto;
 /*--Задание палитры цветов через переменные--*/
 :root
 {
---main-text-color: #434455;
+--main-text-color: #0d0d13;
 --main-background-color:#ffff;
 --logo-check-color:#4D5AE5;
 --header-word-color:#2E2F42;
@@ -126,6 +127,24 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     justify-content: center;
     }
 
+/*--Задаем ссылке страницы Studio - relative--*/
+.current-page-main
+{position: relative;
+color: var(--link-active-color);}
+
+
+/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+.current-page-main::after
+{content: '';
+ width: 100px;
+ height: 4px;
+ left: 0;
+ bottom: -1px;
+ border-radius: 2px;
+ background-color: #404BBF;
+ margin: auto;
+ position: absolute;
+ }
 
 /*----*/ 
 .mobile-cont-sl
@@ -274,26 +293,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .nav-link:hover,
 .nav-link:focus
 {color: var(--link-active-color); }
-
-
-/*--Задаем ссылке страницы Studio - relative--*/
-.current-page-main
-{position: relative;
-color: var(--link-active-color);}
-
-
-/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
-.current-page-main::after
-{content: '';
- width: 48px;
- height: 4px;
- left: 0;
- bottom: -1px;
- border-radius: 2px;
- background-color: #404BBF;
- margin: auto;
- position: absolute;
- }
 
 
 /*--Данные ссылок контактов--*/
@@ -984,9 +983,9 @@ color: var(--link-active-color);}
 
 
 /*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+/*--
 .current-page-main::after
 {content: '';
- /*--display: block;--*/   
  width: 48px;
  height: 4px;
  left: 0;
@@ -996,6 +995,7 @@ color: var(--link-active-color);}
  margin: auto;
  position: absolute;
  }
+ --*/
 
 /*--Прижимаем секцию почты и телефона к правому краю--*/
 .cont
@@ -1245,7 +1245,24 @@ margin-bottom: 16px;
   
   /*-------------Mobile version------------*/
 
-  
+  /*--Задаем ссылке страницы Studio - relative--*/
+.current-page-reltime
+{position: relative;
+color: var(--link-active-color);}
+
+
+/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+.current-page-reltime::after
+{content: '';
+ width: 115px;
+ height: 4px;
+ left: 0;
+ bottom: -1px;
+ border-radius: 2px;
+ background-color: #404BBF;
+ margin: auto;
+ position: absolute;
+ }
   
   
   
@@ -1281,6 +1298,25 @@ margin-bottom: 16px;
   .add1 {
     margin-top: 20px;
   }
+
+  /*--Задаем ссылке страницы Studio - relative--*/
+.current-page-main-boil
+{position: relative;
+color: var(--link-active-color);}
+
+
+/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
+.current-page-main-boil::after
+{content: '';
+ width: 130px;
+ height: 4px;
+ left: 0;
+ bottom: -1px;
+ border-radius: 2px;
+ background-color: #404BBF;
+ margin: auto;
+ position: absolute;
+ }
 
   /*------------------ПЛАНШЕТ------------------*/
 
