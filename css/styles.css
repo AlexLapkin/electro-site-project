@@ -8,7 +8,7 @@ body {
 /*--Сброс дефолтных настроек--*/
 
 /*--Сброс настроек списков списков ul, ol--*/
-.list
+.list, li
 {list-style: none;}
 
 ul, ol
@@ -442,11 +442,13 @@ height: 0;
    
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     max-width: 396px;
     box-shadow: 2px 2px 2px 2px gray;
     border-radius: 10px;
+   /*-- border: 1px solid red; --*/
 }
 
 .cont-elec:hover {
@@ -947,7 +949,6 @@ height: 0;
 
 /*--------------------------------------------------------*/
 
-
 /*--Делаем список навигации flex-контейнером--*/
 .nav-ul 
 {display: flex;}
@@ -1175,8 +1176,6 @@ display: inline-block;
 margin-bottom: 16px;
 }
 
-
-
 .footer-word
 {color: var(--footer-main-text-color);
 font-family: 'Raleway';
@@ -1237,3 +1236,55 @@ margin-bottom: 16px;
  /*--Класс для заливки иконок соцсетей футера--*/
  .icon-sl-foot {
   fill: #f4f4fd; }
+
+
+
+  /*------Страница add Реле времени холодильник--------*/
+  
+  /*-------------Mobile version------------*/
+
+  
+  
+  
+  
+  
+  /*------Страница add2 Таймер для бойлера--------*/
+
+  /*-------------Mobile version------------*/
+
+  .cont-elec-add-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*--max-width: 300px;--*/
+     padding: 20px 20px; 
+   /*--margin-left: auto;
+   margin-right: auto;--*/
+   justify-content: center;
+   gap: 20px;
+   /*--border: 1px solid red;--*/
+  }
+
+  .cont-elec-add-three {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*--border: 1px solid blue;--*/
+  }
+
+  .boil-text {
+    text-align: center;
+  }
+
+  .add1 {
+    margin-top: 20px;
+  }
+
+  /*------------------ПЛАНШЕТ------------------*/
+
+  @media screen and (min-width: 768px)
+  {
+    .cont-elec-add-two {
+    flex-direction: row;
+    }
+  }
