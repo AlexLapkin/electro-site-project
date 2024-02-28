@@ -27,7 +27,18 @@
           <ul class="nav-ul list">
             <!--<li class="item"><a class="nav-link link" href="./index.html">Studio</a></li>-->
             
-            <li class="item"><a class="nav-link current-page-main-boil link" href="">Таймер бойлера</a></li>
+            <li class="item">
+              <form>
+                <select class="nav-link current-page-main link" onchange="window.location.href=this.value;">
+                 <!-- <option value="" >Главная</option> -->
+                  <option value="Relay_voltage.html" >Реле напряжения</option>
+                  <option value="./add.html" >Реле времени</option>
+                  <option value="./add2.html" selected>Таймер</option>
+                  <option value="./add3.html">Энергометр</option>
+                </select>
+              </form>
+              <!-- <a class="nav-link current-page-main-boil link" href="">Таймер бойлера</a> -->
+            </li>
           </ul>
         </nav>
 
