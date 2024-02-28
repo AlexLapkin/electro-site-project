@@ -27,18 +27,17 @@
           <ul class="nav-ul list">
             <!--<li class="item"><a class="nav-link link" href="./index.html">Studio</a></li>-->
             
-            
             <li class="item">
               <form>
                 <select class="nav-link current-page-main link" onchange="window.location.href=this.value;">
                  <!-- <option value="" >Главная</option> -->
                   <option value="Relay_voltage.html" >Реле напряжения</option>
-                  <option value="./add.html" selected>Реле времени</option>
-                  <option value="./add2.html">Таймер</option>
-                  <option value="./add3.html">Энергометр</option>
+                  <option value="../Relay_time.html" >Реле времени</option>
+                  <option value="./Timer.html" selected>Таймер</option>
+                  <option value="./Energometer.html">Энергометр</option>
                 </select>
               </form>
-              <!-- <a class="nav-link current-page-reltime link" href="">Реле времени</a> -->
+              <!-- <a class="nav-link current-page-main-boil link" href="">Таймер бойлера</a> -->
             </li>
           </ul>
         </nav>
@@ -65,7 +64,7 @@
                 <img class="elec-img" src="./images/inf/Logo.jpg" alt="example2" />
             </div>
             <div class="elec-inf-add-title">
-              <h2>Использование дополнительного реле времени для защиты холодильника</h2>
+              <h2>Использование таймера для управления бойлером</h2>
             </div>
             <div class="elec-inf-add">
                 <img class="elec-img" src="./images/inf/Ne_vlezay.png" alt="example2" />
@@ -73,35 +72,46 @@
         </div>
         <!--- <div class="section-inf-ul">   --->
             
-       
-         <div class="cont-elec">
-               <!-- <ul class="cont-elec-add"> -->
-        <!--<h4 class="subtitle-elec">Вместо предисловия</h4>  -->
-        <li>
-         <br>После пропадания и повторного появления электричества человеку хочется как можно быстрее, с минимальной задержкой получить электроснабжение,
-         чтобы не сидеть в темноте. Поэтому задержка включения должна быть минимальной для того, чтобы максимально быстро получить электричество,
-         и достаточной для того, чтобы удостовериться, что напряжение находится в норме, и подача напряжения не приведет к повреждению бытовой техники
-         Обычно для этой цели достаточно выдержки в диапазоне от 10 до 60 сек.</в>
-         <br>
-         Но для отдельных электроприборов указанной выдержки времени недостаточно! Особенно учитывая то, что колебания напряжения могут носить постоянный
-         характер с опеределенной периодичностью. Таким электроприбором является холодильник, имеющий в своем составе компрессор, который по условиям нагрева,
-         требует обеспечения паузы между запусками не менее 5 мин.
-         Поэтому рекомендуется помимо общего реле напряжения, устанавливаемого после вводного автомата, еще и установка дополнительного реле времени в цепи питания
-         холодильника, обеспечивающего указанную задержку в 5 мин.
-        </br>
-        <br>Таким образом получим подачу электроэнергии через (10-60) сек после ее возниковения. А включение холодильника произойдет
-      через 5 мин. после подачи электроэнергии на все остальные потребители.</br>
-        <br>Данное реле времени имеет лишь исполнение для установки в электрощиток. Поэтому о его установке нужно позаботиться заранее - на этапе прокладки электропроводки. 
-        Обычно занимает 1 или 2 модуля.</br>
-        <div class="cont-elec-add-one">
-          <img class="elec-img-add" src="./images/add_relay_time/relay timing.webp" alt="example2" />
+        <div class="cont-elec">
+        <!--    <ul class="cont-elec-add">  -->
+    <!--<h4 class="subtitle-elec">Вместо предисловия</h4>  -->
+    <!-- <li> --> 
+      <div>
+    <br>Бойлер является одним из энергоемких бытовых электроприборов, потребляющих значительное количество электроэнергии. Зачастую бойлер
+    работает даже тогда, когда это не требуется. К примеру днем, когда никого нет дома.</br>
+    <br>Поэтому целесообразно подключать бойлер через таймер, который обеспечивает работу бойлера лишь в определенные заданные 
+промежутки времени, позволяя экономить значительное количество электроэнергии - до 30% от потребляемой без таймера.
+Оптимально включать бойлер в ночное время, когда тариф на электроэнергию снижен, и к тому же это благотворно влияет на питающую сеть.</br>
+<br>Таймер позволяет создать индивидуальный график включения бойлера по дням недели. Если возникает необходимость включения бойлера вне графика,
+есть возможность включения таймера вручную.</br>    
+<br>Таймер можно установить в квартирный электрощиток на стадии ремонта.</br>
+    <div class="cont-elec-add-two">
+      <div class="cont-elec-add-three">
+        <img class="elec-img-add" src="./images/timer_boiler/timer boiler1.webp" alt="example2" />
+        <p class="boil-text">Таймер для бойлера на din-рейку</p>
       </div>
-        <!--<br>Схема совместного включения реле напряжения с реле времени приведена ниже</br> -->
-        <a class="link elec" href="./index.html">На главную...</a>
-              </li>
-             <!--    </ul>  -->
-              
-           </div>
+      <div class="cont-elec-add-three">
+        <img class="elec-img-add" src="./images/timer_boiler/timer 3.jpg" alt="example2" />
+        <p class="boil-text">Схема включения бойлера</p>
+      </div>
+    </div>
+    <br>Можно использовать розеточную версию таймера, которая включается в между бойлером и питающей розеткой. В случае,
+  если ремонт уже завершен или нет возможности установить таймер в электрощиток.</br>
+<div class="cont-elec-add-three add1">
+  <!--<div class="cont-elec-add-four">  -->
+  <img class="elec-img-add" src="./images/timer_boiler/timer boiler2.webp" alt="example2" />
+  <!--<img class="elec-img-add" src="./images/timer_boiler/timer boiler3.webp" alt="example2" />-->
+  <!--</div> -->
+  <p class="boil-text">Розеточный таймер</p>
+</div>
+<a class="link elec" href="./index.html">На главную...</a>
+       <!--  </li> -->
+      </div>
+           <!--  </ul>  -->
+          <div class="cont-elec-add-one">
+            <!--  <img class="elec-img-add" src="./images/add_relay_time/relay timing.webp" alt="example2" /> -->
+          </div>
+       </div>
             
     </section>
     </main>
