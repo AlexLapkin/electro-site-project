@@ -347,7 +347,6 @@ color: var(--link-active-color);
 
 }
 
-
 /*-----------------Описываем ДЕСКТОП---------------------*/
 
 @media screen and (min-width:1158px) {
@@ -369,13 +368,11 @@ color: var(--link-active-color);
         align-items: center;
         }
     
-    
     /*--Прижимаем секцию почты и телефона к правому краю--*/
     .cont
     { margin-left: auto;}
     
-    
-    /*--Делаем список контактов flex-контейнером--*/
+   /*--Делаем список контактов flex-контейнером--*/
     .cont-ul 
     { flex-direction: row;
       gap:40px; }
@@ -416,17 +413,6 @@ color: var(--link-active-color);
 
 /*-------------МОБИЛЬНАЯ ВЕРСИЯ------------------*/
 
-/*--Контейнер, в который помещается контент секций--*/
-/*--
-.container {
-    max-width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
---*/
-
 .section-inf-cont {
     /*--max-width: 428px;--*/
     display: flex;
@@ -442,14 +428,6 @@ color: var(--link-active-color);
     padding-bottom: 30px;
     /*--max-width: 1500px;--*/
     }
-
-/*--
-    .section-inf-ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
---*/
 
 .add-elec {
     margin-top: 20px;
@@ -563,11 +541,12 @@ height: 0;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 0px;
+    color:rgb(83, 85, 207)
     color: black;
 }
 
 .elec:hover {
-    color:rgb(83, 85, 207);
+    color:rgb(6, 8, 116);
 }
 
 .elec-inf-add-title {
@@ -1149,14 +1128,6 @@ padding-bottom: 120px;} */
  overflow: hidden;
  }
 
-/*--Ставим по горизонтали левый и рпавый блок футера--*/
-/*--
-.foot-content
-{
-    /*--display: flex;--*/
-/*--align-items: baseline;
-} --*/
-
 /*--Дополнительные данные нижнего логотипа--*/
 .foot {
 display: inline-block;
@@ -1236,25 +1207,7 @@ margin-bottom: 16px;
 color: var(--link-active-color);
 text-decoration: underline;}
 
-
-/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
-/*--
-.current-page-reltime::after
-{content: '';
- width: 115px;
- height: 4px;
- left: 0;
- bottom: -1px;
- border-radius: 2px;
- background-color: #404BBF;
- margin: auto;
- position: absolute;
- }
- --*/ 
-  
-  
-  
-  /*------Страница add2 Таймер для бойлера--------*/
+/*------Страница add2 Таймер для бойлера--------*/
 
   /*-------------Mobile version------------*/
 
@@ -1293,23 +1246,7 @@ color: var(--link-active-color);
 text-decoration: underline;
 }
 
-
-/*--Делаем подчеркивание текущей страницы при помощи псевдоэлемента after--*/
-/*--
-.current-page-main-boil::after
-{content: '';
- width: 130px;
- height: 4px;
- left: 0;
- bottom: -1px;
- border-radius: 2px;
- background-color: #404BBF;
- margin: auto;
- position: absolute;
- }
- --*/
-
-  /*------------------ПЛАНШЕТ------------------*/
+/*------------------ПЛАНШЕТ------------------*/
 
   @media screen and (min-width: 768px)
   {
