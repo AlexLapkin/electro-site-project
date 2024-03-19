@@ -1196,3 +1196,17 @@ text-decoration: underline;
 {position: relative;
 color: var(--link-active-color);
 text-decoration: underline;}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; 
+  /* background-color: #333;
+  color: #fff; */
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+}
