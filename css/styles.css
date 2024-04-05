@@ -23,7 +23,8 @@ ul, ol
 
 /*--Сброс настроек ссылок a--*/
 .link
-{text-decoration: none;}
+{text-decoration: none;
+}
 
 /*--Сброс настроек заголовков h и текста p--*/
 h1, h2, h3, p
@@ -606,7 +607,6 @@ height: 0;
 
 .elec {
     margin-left: 20px;
-    margin-top: 10px;
     margin-bottom: 0px;
     color:rgb(83, 85, 207)
     color: black;
@@ -638,6 +638,9 @@ height: 0;
     font-size: 16px;
 }
 
+.link_page {
+  margin-top: 10px;
+}
 
 /*----------------ПЛАНШЕТНАЯ ВЕРСИЯ------------*/
 
